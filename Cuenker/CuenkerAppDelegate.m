@@ -12,6 +12,8 @@
 
 @synthesize window;
 @synthesize suenkButton;
+@synthesize statusInicator;
+@synthesize logOutput;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -19,7 +21,38 @@
 }
 
 - (IBAction)suenk:(id)sender {
-  [self.suenkButton setTitle:@"SÜNKING!!"];
+  [self.statusInicator setStringValue:@"SÜNKING!!"];
+  [self.statusInicator setBackgroundColor:[NSColor redColor]];
+  NSTask *task;
+  task = [[NSTask alloc] init];
+  [task setLaunchPath: @"/bin/ls"];
+  
+  NSArray *arguments;
+  arguments = [NSArray arrayWithObjects: @"-laF", @".", nil];
+  [task setArguments: arguments];
+  
+  NSPipe *pipe;
+  pipe = [NSPipe pipe];
+  [task setStandardOutput: pipe];
+  
+  NSFileHandle *file;
+  file = [pipe fileHandleForReading];
+  
+  [task launch];
+  
+  NSData *data;
+  data = [file readDataToEndOfFile];
+  
+  NSString *string;
+  string = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+  NSLog (@"ls returned:\n%@", string);
+  
+  [self.logOutput setStringValue:string];
+  [string release];
+  [task release];
+
+  [self.statusInicator setStringValue:@"done"];
+  [self.statusInicator setBackgroundColor:[NSColor greenColor]];
   NSLog(@"received a suenk: message");
 }
 @end

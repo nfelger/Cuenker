@@ -11,10 +11,14 @@
 @interface CuenkerAppDelegate : NSObject <NSApplicationDelegate> {
   NSWindow *window;
   NSButton *suenkButton;
+  NSTextField *statusInicator;
+  NSTextFieldCell *logOutput;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSButton *suenkButton;
+@property (assign) IBOutlet NSTextField *statusInicator;
+@property (assign) IBOutlet NSTextFieldCell *logOutput;
 
 - (IBAction)suenk:(id)sender;
 
