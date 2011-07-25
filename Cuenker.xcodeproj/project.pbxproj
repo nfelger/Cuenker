@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD6513DDA8280052607D /* Cocoa.framework */; };
+		14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD6E13DDA8280052607D /* InfoPlist.strings */; };
+		14AFCD7213DDA8280052607D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD7113DDA8280052607D /* main.m */; };
+		14AFCD7613DDA8280052607D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD7413DDA8280052607D /* Credits.rtf */; };
+		14AFCD7913DDA8280052607D /* CuenkerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD7813DDA8280052607D /* CuenkerAppDelegate.m */; };
+		14AFCD7C13DDA8290052607D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD7A13DDA8290052607D /* MainMenu.xib */; };
+		14AFCD8413DDA8290052607D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD8313DDA8290052607D /* SenTestingKit.framework */; };
+		14AFCD8513DDA8290052607D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD6513DDA8280052607D /* Cocoa.framework */; };
+		14AFCD8D13DDA8290052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD8B13DDA8290052607D /* InfoPlist.strings */; };
+		14AFCD8F13DDA8290052607D /* CuenkerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD8E13DDA8290052607D /* CuenkerTests.h */; };
+		14AFCD9113DDA8290052607D /* CuenkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD9013DDA8290052607D /* CuenkerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14AFCD8613DDA8290052607D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14AFCD5813DDA8280052607D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AFCD6013DDA8280052607D;
+			remoteInfo = Cuenker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AFCD6113DDA8280052607D /* Cuenker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuenker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AFCD6513DDA8280052607D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		14AFCD6813DDA8280052607D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		14AFCD6913DDA8280052607D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		14AFCD6A13DDA8280052607D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14AFCD6D13DDA8280052607D /* Cuenker-Info.plist */ = {isa = PBXFileReference; path = "Cuenker-Info.plist"; sourceTree = "<group>"; };
+		14AFCD6F13DDA8280052607D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14AFCD7113DDA8280052607D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14AFCD7313DDA8280052607D /* Cuenker-Prefix.pch */ = {isa = PBXFileReference; path = "Cuenker-Prefix.pch"; sourceTree = "<group>"; };
+		14AFCD7513DDA8280052607D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		14AFCD7713DDA8280052607D /* CuenkerAppDelegate.h */ = {isa = PBXFileReference; path = CuenkerAppDelegate.h; sourceTree = "<group>"; };
+		14AFCD7813DDA8280052607D /* CuenkerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuenkerAppDelegate.m; sourceTree = "<group>"; };
+		14AFCD7B13DDA8290052607D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		14AFCD8213DDA8290052607D /* CuenkerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuenkerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AFCD8313DDA8290052607D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		14AFCD8A13DDA8290052607D /* CuenkerTests-Info.plist */ = {isa = PBXFileReference; path = "CuenkerTests-Info.plist"; sourceTree = "<group>"; };
+		14AFCD8C13DDA8290052607D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14AFCD8E13DDA8290052607D /* CuenkerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuenkerTests.h; sourceTree = "<group>"; };
+		14AFCD9013DDA8290052607D /* CuenkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuenkerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14AFCD5E13DDA8280052607D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AFCD7E13DDA8290052607D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD8413DDA8290052607D /* SenTestingKit.framework in Frameworks */,
+				14AFCD8513DDA8290052607D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AFCD5613DDA8280052607D = {
+			isa = PBXGroup;
+			children = (
+				14AFCD6B13DDA8280052607D /* Cuenker */,
+				14AFCD8813DDA8290052607D /* CuenkerTests */,
+				14AFCD6413DDA8280052607D /* Frameworks */,
+				14AFCD6213DDA8280052607D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14AFCD6213DDA8280052607D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD6113DDA8280052607D /* Cuenker.app */,
+				14AFCD8213DDA8290052607D /* CuenkerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14AFCD6413DDA8280052607D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD6513DDA8280052607D /* Cocoa.framework */,
+				14AFCD8313DDA8290052607D /* SenTestingKit.framework */,
+				14AFCD6713DDA8280052607D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14AFCD6713DDA8280052607D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD6813DDA8280052607D /* AppKit.framework */,
+				14AFCD6913DDA8280052607D /* CoreData.framework */,
+				14AFCD6A13DDA8280052607D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		14AFCD6B13DDA8280052607D /* Cuenker */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD7713DDA8280052607D /* CuenkerAppDelegate.h */,
+				14AFCD7813DDA8280052607D /* CuenkerAppDelegate.m */,
+				14AFCD7A13DDA8290052607D /* MainMenu.xib */,
+				14AFCD6C13DDA8280052607D /* Supporting Files */,
+			);
+			path = Cuenker;
+			sourceTree = "<group>";
+		};
+		14AFCD6C13DDA8280052607D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD6D13DDA8280052607D /* Cuenker-Info.plist */,
+				14AFCD6E13DDA8280052607D /* InfoPlist.strings */,
+				14AFCD7113DDA8280052607D /* main.m */,
+				14AFCD7313DDA8280052607D /* Cuenker-Prefix.pch */,
+				14AFCD7413DDA8280052607D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14AFCD8813DDA8290052607D /* CuenkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD8E13DDA8290052607D /* CuenkerTests.h */,
+				14AFCD9013DDA8290052607D /* CuenkerTests.m */,
+				14AFCD8913DDA8290052607D /* Supporting Files */,
+			);
+			path = CuenkerTests;
+			sourceTree = "<group>";
+		};
+		14AFCD8913DDA8290052607D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14AFCD8A13DDA8290052607D /* CuenkerTests-Info.plist */,
+				14AFCD8B13DDA8290052607D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14AFCD6013DDA8280052607D /* Cuenker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AFCD9413DDA8290052607D /* Build configuration list for PBXNativeTarget "Cuenker" */;
+			buildPhases = (
+				14AFCD5D13DDA8280052607D /* Sources */,
+				14AFCD5E13DDA8280052607D /* Frameworks */,
+				14AFCD5F13DDA8280052607D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cuenker;
+			productName = Cuenker;
+			productReference = 14AFCD6113DDA8280052607D /* Cuenker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14AFCD8113DDA8290052607D /* CuenkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AFCD9713DDA8290052607D /* Build configuration list for PBXNativeTarget "CuenkerTests" */;
+			buildPhases = (
+				14AFCD7D13DDA8290052607D /* Sources */,
+				14AFCD7E13DDA8290052607D /* Frameworks */,
+				14AFCD7F13DDA8290052607D /* Resources */,
+				14AFCD8013DDA8290052607D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AFCD8713DDA8290052607D /* PBXTargetDependency */,
+			);
+			name = CuenkerTests;
+			productName = CuenkerTests;
+			productReference = 14AFCD8213DDA8290052607D /* CuenkerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14AFCD5813DDA8280052607D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 14AFCD5B13DDA8280052607D /* Build configuration list for PBXProject "Cuenker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14AFCD5613DDA8280052607D;
+			productRefGroup = 14AFCD6213DDA8280052607D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14AFCD6013DDA8280052607D /* Cuenker */,
+				14AFCD8113DDA8290052607D /* CuenkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AFCD5F13DDA8280052607D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */,
+				14AFCD7613DDA8280052607D /* Credits.rtf in Resources */,
+				14AFCD7C13DDA8290052607D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AFCD7F13DDA8290052607D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD8D13DDA8290052607D /* InfoPlist.strings in Resources */,
+				14AFCD8F13DDA8290052607D /* CuenkerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14AFCD8013DDA8290052607D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14AFCD5D13DDA8280052607D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD7213DDA8280052607D /* main.m in Sources */,
+				14AFCD7913DDA8280052607D /* CuenkerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AFCD7D13DDA8290052607D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AFCD9113DDA8290052607D /* CuenkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14AFCD8713DDA8290052607D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AFCD6013DDA8280052607D /* Cuenker */;
+			targetProxy = 14AFCD8613DDA8290052607D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14AFCD6E13DDA8280052607D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AFCD6F13DDA8280052607D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14AFCD7413DDA8280052607D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AFCD7513DDA8280052607D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		14AFCD7A13DDA8290052607D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AFCD7B13DDA8290052607D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		14AFCD8B13DDA8290052607D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AFCD8C13DDA8290052607D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14AFCD9213DDA8290052607D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		14AFCD9313DDA8290052607D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		14AFCD9513DDA8290052607D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuenker/Cuenker-Prefix.pch";
+				INFOPLIST_FILE = "Cuenker/Cuenker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14AFCD9613DDA8290052607D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuenker/Cuenker-Prefix.pch";
+				INFOPLIST_FILE = "Cuenker/Cuenker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14AFCD9813DDA8290052607D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cuenker.app/Contents/MacOS/Cuenker";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuenker/Cuenker-Prefix.pch";
+				INFOPLIST_FILE = "CuenkerTests/CuenkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		14AFCD9913DDA8290052607D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cuenker.app/Contents/MacOS/Cuenker";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuenker/Cuenker-Prefix.pch";
+				INFOPLIST_FILE = "CuenkerTests/CuenkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14AFCD5B13DDA8280052607D /* Build configuration list for PBXProject "Cuenker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AFCD9213DDA8290052607D /* Debug */,
+				14AFCD9313DDA8290052607D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AFCD9413DDA8290052607D /* Build configuration list for PBXNativeTarget "Cuenker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AFCD9513DDA8290052607D /* Debug */,
+				14AFCD9613DDA8290052607D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14AFCD9713DDA8290052607D /* Build configuration list for PBXNativeTarget "CuenkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AFCD9813DDA8290052607D /* Debug */,
+				14AFCD9913DDA8290052607D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14AFCD5813DDA8280052607D /* Project object */;
+}

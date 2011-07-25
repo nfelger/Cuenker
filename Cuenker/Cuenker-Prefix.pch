@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Cuenker' target in the 'Cuenker' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
