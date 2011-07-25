@@ -10,8 +10,12 @@
 
 @interface CuenkerAppDelegate : NSObject <NSApplicationDelegate> {
   NSWindow *window;
+  NSButton *suenkButton;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSButton *suenkButton;
+
+- (IBAction)suenk:(id)sender;
 
 @end

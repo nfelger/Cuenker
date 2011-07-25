@@ -11,10 +11,15 @@
 @implementation CuenkerAppDelegate
 
 @synthesize window;
+@synthesize suenkButton;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
   // Insert code here to initialize your application
 }
 
+- (IBAction)suenk:(id)sender {
+  [self.suenkButton setTitle:@"SÜNKING!!"];
+  NSLog(@"received a suenk: message");
+}
 @end
