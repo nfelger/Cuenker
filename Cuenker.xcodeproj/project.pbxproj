@@ -18,6 +18,7 @@
 		14AFCD8D13DDA8290052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD8B13DDA8290052607D /* InfoPlist.strings */; };
 		14AFCD8F13DDA8290052607D /* CuenkerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD8E13DDA8290052607D /* CuenkerTests.h */; };
 		14AFCD9113DDA8290052607D /* CuenkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD9013DDA8290052607D /* CuenkerTests.m */; };
+		14AFCDA813DF35E10052607D /* RsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCDA713DF35E10052607D /* RsyncTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		14AFCD8C13DDA8290052607D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14AFCD8E13DDA8290052607D /* CuenkerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuenkerTests.h; sourceTree = "<group>"; };
 		14AFCD9013DDA8290052607D /* CuenkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuenkerTests.m; sourceTree = "<group>"; };
+		14AFCDA613DF35E10052607D /* RsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncTask.h; sourceTree = "<group>"; };
+		14AFCDA713DF35E10052607D /* RsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				14AFCD7713DDA8280052607D /* CuenkerAppDelegate.h */,
 				14AFCD7813DDA8280052607D /* CuenkerAppDelegate.m */,
 				14AFCD7A13DDA8290052607D /* MainMenu.xib */,
+				14AFCDA613DF35E10052607D /* RsyncTask.h */,
+				14AFCDA713DF35E10052607D /* RsyncTask.m */,
 				14AFCD6C13DDA8280052607D /* Supporting Files */,
 			);
 			path = Cuenker;
@@ -261,6 +266,7 @@
 			files = (
 				14AFCD7213DDA8280052607D /* main.m in Sources */,
 				14AFCD7913DDA8280052607D /* CuenkerAppDelegate.m in Sources */,
+				14AFCDA813DF35E10052607D /* RsyncTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +438,7 @@
 				14AFCD9613DDA8290052607D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14AFCD9713DDA8290052607D /* Build configuration list for PBXNativeTarget "CuenkerTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				14AFCD9913DDA8290052607D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
