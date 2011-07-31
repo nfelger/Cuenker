@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140DC84713E4749E004B11F9 /* logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84513E4749E004B11F9 /* logo-color.png */; };
+		140DC84F13E5F586004B11F9 /* logo-bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84E13E5F586004B11F9 /* logo-bw.png */; };
 		14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD6513DDA8280052607D /* Cocoa.framework */; };
 		14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD6E13DDA8280052607D /* InfoPlist.strings */; };
 		14AFCD7213DDA8280052607D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD7113DDA8280052607D /* main.m */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140DC84513E4749E004B11F9 /* logo-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-color.png"; sourceTree = "<group>"; };
+		140DC84E13E5F586004B11F9 /* logo-bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-bw.png"; sourceTree = "<group>"; };
 		14AFCD6113DDA8280052607D /* Cuenker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuenker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AFCD6513DDA8280052607D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		14AFCD6813DDA8280052607D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144FCAD813E4540B005394A2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				140DC84E13E5F586004B11F9 /* logo-bw.png */,
+				140DC84513E4749E004B11F9 /* logo-color.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		14AFCD5613DDA8280052607D = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 		14AFCD6C13DDA8280052607D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				144FCAD813E4540B005394A2 /* Images */,
 				14AFCD6D13DDA8280052607D /* Cuenker-Info.plist */,
 				14AFCD6E13DDA8280052607D /* InfoPlist.strings */,
 				14AFCD7113DDA8280052607D /* main.m */,
@@ -229,6 +243,8 @@
 				14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */,
 				14AFCD7613DDA8280052607D /* Credits.rtf in Resources */,
 				14AFCD7C13DDA8290052607D /* MainMenu.xib in Resources */,
+				140DC84713E4749E004B11F9 /* logo-color.png in Resources */,
+				140DC84F13E5F586004B11F9 /* logo-bw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
