@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol RsyncController
+@protocol RsyncTaskController
 
 - (void)appendOutput:(NSString *)output;
 
@@ -20,10 +20,10 @@
 
 @interface RsyncTask : NSObject {
   NSTask *task;
-  id     <RsyncController>controller;
+  id     <RsyncTaskController>controller;
 }
 
-- (id)initWithController:(id <RsyncController>)controller;
+- (id)initWithController:(id <RsyncTaskController>)controller;
 
 - (void) startProcess;
 

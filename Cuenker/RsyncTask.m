@@ -10,7 +10,7 @@
 
 @implementation RsyncTask
 
-- (id)initWithController:(id <RsyncController>)c
+- (id)initWithController:(id <RsyncTaskController>)c
 {
   self = [super init];
   controller = c;
