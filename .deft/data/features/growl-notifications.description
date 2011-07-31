@@ -1,0 +1,3 @@
+Notify user whenever sync has completed and say how many files were synced and how long it took.
+
+- Needs preference to turn off.
