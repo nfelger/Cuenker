@@ -32,6 +32,13 @@ static void gotEvent(ConstFSEventStreamRef stream,
   return self;
 }
 
+- (void) dealloc {
+  [self stopWatchingFSChanges];
+  FSEventStreamUnscheduleFromRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
+  CFRelease(stream);
+  [super dealloc];
+}
+
 - (void)startRsync
 {
   if (rsyncTask != nil) [rsyncTask release];
@@ -50,7 +57,6 @@ static void gotEvent(ConstFSEventStreamRef stream,
   
   NSArray *paths = [[NSArray arrayWithObject:newPath] retain];
   struct FSEventStreamContext context;
-  FSEventStreamRef stream;
   
   context.version = 0L;
   context.info = self;
@@ -74,7 +80,6 @@ static void gotEvent(ConstFSEventStreamRef stream,
   FSEventStreamScheduleWithRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
   
   FSEventStreamStart(stream);
-  //  CFRunLoopRun();
   
   NSLog(@"Started watching %@", newPath);
   
@@ -84,7 +89,8 @@ static void gotEvent(ConstFSEventStreamRef stream,
 - (void)stopWatchingFSChanges {
   if(!currentlyWatchingFS) { return; }
   
-  //TODO!
+  FSEventStreamStop(stream);
+  
   currentlyWatchingFS = false;
 }
 

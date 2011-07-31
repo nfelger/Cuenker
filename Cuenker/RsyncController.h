@@ -15,6 +15,7 @@
   RsyncTask *rsyncTask;
   BOOL currentlyWatchingFS;
   id <RsyncTaskController> taskController;
+  FSEventStreamRef stream;
 }
 
 - (id)initWithTaskController:(id <RsyncTaskController>)taskController;
