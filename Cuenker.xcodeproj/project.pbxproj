@@ -10,6 +10,7 @@
 		140DC84713E4749E004B11F9 /* logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84513E4749E004B11F9 /* logo-color.png */; };
 		140DC84B13E5A6ED004B11F9 /* RsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140DC84A13E5A6ED004B11F9 /* RsyncController.m */; };
 		140DC84F13E5F586004B11F9 /* logo-bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84E13E5F586004B11F9 /* logo-bw.png */; };
+		140DC85D13E602E7004B11F9 /* logo-lg.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC85C13E602E7004B11F9 /* logo-lg.png */; };
 		14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD6513DDA8280052607D /* Cocoa.framework */; };
 		14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD6E13DDA8280052607D /* InfoPlist.strings */; };
 		14AFCD7213DDA8280052607D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD7113DDA8280052607D /* main.m */; };
@@ -40,6 +41,7 @@
 		140DC84913E5A6ED004B11F9 /* RsyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncController.h; sourceTree = "<group>"; };
 		140DC84A13E5A6ED004B11F9 /* RsyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncController.m; sourceTree = "<group>"; };
 		140DC84E13E5F586004B11F9 /* logo-bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-bw.png"; sourceTree = "<group>"; };
+		140DC85C13E602E7004B11F9 /* logo-lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-lg.png"; sourceTree = "<group>"; };
 		14AFCD6113DDA8280052607D /* Cuenker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuenker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AFCD6513DDA8280052607D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		14AFCD6813DDA8280052607D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 		144FCAD813E4540B005394A2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				140DC85C13E602E7004B11F9 /* logo-lg.png */,
 				140DC84E13E5F586004B11F9 /* logo-bw.png */,
 				140DC84513E4749E004B11F9 /* logo-color.png */,
 			);
@@ -254,6 +257,7 @@
 				14AFCD7C13DDA8290052607D /* MainMenu.xib in Resources */,
 				140DC84713E4749E004B11F9 /* logo-color.png in Resources */,
 				140DC84F13E5F586004B11F9 /* logo-bw.png in Resources */,
+				140DC85D13E602E7004B11F9 /* logo-lg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
