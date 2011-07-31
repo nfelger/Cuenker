@@ -7,14 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "RsyncTask.h"
+#import "RsyncController.h"
 
 @interface CuenkerAppDelegate : NSObject <NSApplicationDelegate, RsyncTaskController> {
   NSWindow *window;
   NSButton *suenkButton;
   NSTextField *statusInicator;
   NSTextView *logView;
-  RsyncTask *rsyncTask;
+  RsyncController *rsyncController;
 }
 
 @property (assign) IBOutlet NSWindow *window;

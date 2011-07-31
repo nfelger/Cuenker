@@ -17,11 +17,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  // Insert code here to initialize your application
+}
+
+- (void)awakeFromNib {
+  rsyncController = [[RsyncController alloc] initWithTaskController:self];
 }
 
 - (IBAction)suenk:(id)sender {
-  if (rsyncTask != nil) [rsyncTask release];
+  [rsyncController startRsync];
+}
 
   rsyncTask = [[RsyncTask alloc] initWithController:self];
   [rsyncTask startProcess];

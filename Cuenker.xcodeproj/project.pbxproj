@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		140DC84713E4749E004B11F9 /* logo-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84513E4749E004B11F9 /* logo-color.png */; };
+		140DC84B13E5A6ED004B11F9 /* RsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140DC84A13E5A6ED004B11F9 /* RsyncController.m */; };
 		140DC84F13E5F586004B11F9 /* logo-bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 140DC84E13E5F586004B11F9 /* logo-bw.png */; };
 		14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCD6513DDA8280052607D /* Cocoa.framework */; };
 		14AFCD7013DDA8280052607D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD6E13DDA8280052607D /* InfoPlist.strings */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		140DC84513E4749E004B11F9 /* logo-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-color.png"; sourceTree = "<group>"; };
+		140DC84913E5A6ED004B11F9 /* RsyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncController.h; sourceTree = "<group>"; };
+		140DC84A13E5A6ED004B11F9 /* RsyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncController.m; sourceTree = "<group>"; };
 		140DC84E13E5F586004B11F9 /* logo-bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-bw.png"; sourceTree = "<group>"; };
 		14AFCD6113DDA8280052607D /* Cuenker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuenker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AFCD6513DDA8280052607D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				14AFCD7713DDA8280052607D /* CuenkerAppDelegate.h */,
 				14AFCD7813DDA8280052607D /* CuenkerAppDelegate.m */,
 				14AFCD7A13DDA8290052607D /* MainMenu.xib */,
+				140DC84913E5A6ED004B11F9 /* RsyncController.h */,
+				140DC84A13E5A6ED004B11F9 /* RsyncController.m */,
 				14AFCDA613DF35E10052607D /* RsyncTask.h */,
 				14AFCDA713DF35E10052607D /* RsyncTask.m */,
 				14AFCD6C13DDA8280052607D /* Supporting Files */,
@@ -283,6 +288,7 @@
 				14AFCD7213DDA8280052607D /* main.m in Sources */,
 				14AFCD7913DDA8280052607D /* CuenkerAppDelegate.m in Sources */,
 				14AFCDA813DF35E10052607D /* RsyncTask.m in Sources */,
+				140DC84B13E5A6ED004B11F9 /* RsyncController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
