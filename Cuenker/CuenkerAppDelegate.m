@@ -12,7 +12,9 @@
 
 @synthesize window;
 @synthesize suenkButton;
+@synthesize watchFSButton;
 @synthesize statusInicator;
+@synthesize statusMenu;
 @synthesize logView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -20,6 +22,8 @@
 }
 
 - (void)awakeFromNib {
+  [self setupStatusItem];
+  
   rsyncController = [[RsyncController alloc] initWithTaskController:self];
 }
 
@@ -27,28 +31,44 @@
   [rsyncController startRsync];
 }
 
-  rsyncTask = [[RsyncTask alloc] initWithController:self];
-  [rsyncTask startProcess];
+- (IBAction)startStopWatchingFSChanges:(id)sender {
+  if([watchFSButton state] == NSOnState) {
+    [rsyncController startWatchingFSChanges];
+  } else {
+    [rsyncController stopWatchingFSChanges];
+  }
 }
 
 - (void)appendOutput:(NSString *)output
 {
-  [[self.logView textStorage] appendAttributedString: [[[NSAttributedString alloc]
+  [[logView textStorage] appendAttributedString: [[[NSAttributedString alloc]
                                                      initWithString: output] autorelease]];
-  [self.logView scrollRangeToVisible:NSMakeRange([[self.logView string] length], 0)];
+  [logView scrollRangeToVisible:NSMakeRange([[self.logView string] length], 0)];
 }
 
 - (void)processStarted
 {
-  [self.logView setString:@""];
-  [self.statusInicator setStringValue:@"SÜNKING!!"];
-  [self.statusInicator setBackgroundColor:[NSColor redColor]];
+  [logView setString:@""];
+  [statusInicator setStringValue:@"SÜNKING!!"];
+  [statusInicator setBackgroundColor:[NSColor redColor]];
+  [statusItem setImage:[NSImage imageNamed: @"logo-color.png"]];
 }
 
 - (void)processFinished
 {
-  [self.statusInicator setStringValue:@"done"];
-  [self.statusInicator setBackgroundColor:[NSColor greenColor]];
+  [statusInicator setStringValue:@"done"];
+  [statusInicator setBackgroundColor:[NSColor greenColor]];
+  [statusItem setImage:[NSImage imageNamed: @"logo-bw.png"]];
+}
+
+
+- (void)setupStatusItem {
+  statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+  [statusItem retain];
+  
+  [statusItem setMenu:statusMenu];
+  [statusItem setHighlightMode:YES];
+  [statusItem setImage:[NSImage imageNamed: @"logo-bw.png"]];
 }
 
 @end

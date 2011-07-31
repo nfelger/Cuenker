@@ -22,6 +22,7 @@
 		14AFCD8F13DDA8290052607D /* CuenkerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 14AFCD8E13DDA8290052607D /* CuenkerTests.h */; };
 		14AFCD9113DDA8290052607D /* CuenkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCD9013DDA8290052607D /* CuenkerTests.m */; };
 		14AFCDA813DF35E10052607D /* RsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AFCDA713DF35E10052607D /* RsyncTask.m */; };
+		14AFCDAF13E0402F0052607D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AFCDAE13E0402F0052607D /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		14AFCD9013DDA8290052607D /* CuenkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuenkerTests.m; sourceTree = "<group>"; };
 		14AFCDA613DF35E10052607D /* RsyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RsyncTask.h; sourceTree = "<group>"; };
 		14AFCDA713DF35E10052607D /* RsyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RsyncTask.m; sourceTree = "<group>"; };
+		14AFCDAE13E0402F0052607D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFCDAF13E0402F0052607D /* CoreServices.framework in Frameworks */,
 				14AFCD6613DDA8280052607D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +117,7 @@
 		14AFCD6413DDA8280052607D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14AFCDAE13E0402F0052607D /* CoreServices.framework */,
 				14AFCD6513DDA8280052607D /* Cocoa.framework */,
 				14AFCD8313DDA8290052607D /* SenTestingKit.framework */,
 				14AFCD6713DDA8280052607D /* Other Frameworks */,

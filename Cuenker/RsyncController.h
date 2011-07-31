@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <CoreServices/CoreServices.h>
 #import "RsyncTask.h"
 
 @interface RsyncController : NSObject {
 @private
   RsyncTask *rsyncTask;
+  BOOL currentlyWatchingFS;
   id <RsyncTaskController> taskController;
 }
 
 - (id)initWithTaskController:(id <RsyncTaskController>)taskController;
 - (void)startRsync;
+- (void)startWatchingFSChanges;
+- (void)stopWatchingFSChanges;
 
 @end
