@@ -14,7 +14,6 @@
 @synthesize suenkButton;
 @synthesize watchFSButton;
 @synthesize statusInicator;
-@synthesize statusMenu;
 @synthesize logView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -66,9 +65,15 @@
   statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
   [statusItem retain];
   
-  [statusItem setMenu:statusMenu];
   [statusItem setHighlightMode:YES];
   [statusItem setImage:[NSImage imageNamed: @"logo-bw.png"]];
+  
+  [statusItem setTarget:self];
+  [statusItem setAction:@selector(statusItemAction)];
+}
+
+- (void)statusItemAction {
+  NSLog(@"Look at me clicked");
 }
 
 @end

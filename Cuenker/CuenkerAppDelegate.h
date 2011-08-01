@@ -15,13 +15,11 @@
   NSButton *watchFSButton;
   NSTextField *statusInicator;
   NSTextView *logView;
-  NSMenu *statusMenu;
   NSStatusItem *statusItem;
   RsyncController *rsyncController;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSMenu *statusMenu;
 @property (assign) IBOutlet NSButton *suenkButton;
 @property (assign) IBOutlet NSButton *watchFSButton;
 @property (assign) IBOutlet NSTextField *statusInicator;
@@ -31,4 +29,5 @@
 - (IBAction)startStopWatchingFSChanges:(id)sender;
 
 - (void)setupStatusItem;
+- (void)statusItemAction;
 @end
